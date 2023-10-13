@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body{   
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1> Teste</h1>
+
+    <script> 
+        var lugar = window.prompt('Mora em Rj ou SP?')  
+        var idade = Number(prompt('Qual sua idade?'))
+
+        i = idade >=18 && idade <= 17? 'Maior de idade':'Menor de idade'
+
+        s = 'Rj'  || 'SP' == lugar
+
+        document.write(`Sua idade é  ${idade} anos e é ${i} <br> `)
+        document.write(`Mora em ${lugar} = ${s} `)
+        
+    </script>
+</body>
+</html>

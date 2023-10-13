@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{   
+            background-color: rgba(137, 43, 226, 0.493);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{ 
+            text-align: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+    
+    <script>        
+         /*  var  nome = window.prompt('Qual seu nome?')
+
+         document.write(`<strong>${nome}</strong>, Seu nome tem  ${nome.length} letras <br>`) 
+
+        document.write(`<strong> ${nome} </strong>Seu nome em Maiusculo é, <strong>${nome.toUpperCase()}</strong> <br>`)
+
+        document.write(`Podemos fazer também em Minusculo,<strong> ${nome.toLowerCase()}</strong>`)*/
+        var nome = window.prompt('Qual seu nome')
+        var n2 = Number(window.prompt('Qual deu sálario'))
+        var s = n2.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+        document.write(`Olá, ${nome} seu sálario é ${s}`) 
+        /*  () ** * /  % + - ordem de soma */
+        
+
+       
+
+    </script>
+</body>
+</html>

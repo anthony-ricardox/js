@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Número</title>
+    <style> 
+        body{   
+            font-family: Arial, Helvetica, sans-serif;
+        
+            font-size: 16pt;
+            background-color: black;
+        }
+        main{   
+            background-color: white;
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            line-height: 35px ;
+        }
+        main h1{    
+            font-size: 18px;
+            text-align: center;
+            padding: 20px;
+        }
+        input{  
+            width: 70px;
+            padding: 2px;
+            margin-left: 30%;
+            
+           
+            
+        }
+
+        div#res{    
+            margin-top: 20px;
+            font-size: 14pt;
+            text-align: center;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somando valores</h1>
+        <input type="number" name="t1" id="t1"> 
+        
+        <input type='number' name="t2" id="t2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="res">  </div>
+    </main>
+
+
+    arti
+    <script>    
+        function somar(){  
+            
+            var a1 = window.document.getElementById('t1')
+            var a2 = window.document.getElementById('t2')
+            var res = window.document.getElementById('res')
+
+            var n1 = Number(a1.value)
+            var n2 = Number(a2.value)
+
+            var s = n1 * n2
+            res.innerHTML = `A soma entre ${n1} x ${n2} = <strong>${s}</strong>`
+            
+
+        }
+        
+            
+
+
+    </script>
+</body>
+</html>

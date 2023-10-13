@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style> 
+        body{   
+            background-color: darkgrey;
+            font-family: Arial, Helvetica, sans-serif;
+            color: brown;
+        }
+        h1{ 
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Começando os estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> JavaScript</p>
+    <div id="d">Clique em mim</div>
+
+    <script>  
+        
+        var p1 = window.document.getElementsByTagName('p')[1] //criei uma variavel para poder ter acesso ao p de paragrafo. usando TagName
+        window.document.write(p1.innerHTML) //seguindo esse algoritmo fiz com oque o paragrafo do html seja puxado e escrito
+        p1.style.color='black' //usando esse algoritmo, posso usar CSS e manipular tudo
+
+       // var div1 = document.getElementById('d')//criei uma variavel para poder ter acesso ao div  usando Id
+       // div1.style.color='blue'
+       // div1.innerText='mudei essa div para : Olá Anthony'
+        
+       var d = window.document.querySelector('div#d')
+       d.style.color = 'blue'//tudo tem o mesmo algoritmo
+
+    </script>
+</body>
+</html>
