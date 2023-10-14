@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hora do Dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+    <header>    
+        <h1>Hora do Dia </h1>
+    </header>
+
+    <main>
+       <section>  
+             <div id="msg"> Aqui vai aparecer a mensagem </div>
+             <div> <img id="imagem" src="modelo/manha.png" alt="manha"></div>
+          
+      </section>
+    </main>
+      <footer> @anthony-ricardox</footer>
+      
+      <script>
+            function carregar(){    
+                var msg = document.querySelector('#msg')
+                var imagem = document.querySelector('#imagem')
+                var agora = new Date()
+                var hora = agora.getHours()
+                msg.innerHTML = `São ${hora} horas`
+                if(hora >= 0 && hora < 12){  
+                    msg.innerHTML += ' BOM DIA'
+                    img.src= 'manha.jpg'
+                }else if(hora >= 12 && hora < 18){  
+                   msg.innerHTML += ' BOA TARDE'
+                    img.src= 'tarde.png'
+                }else{  
+                    msg.innerHTML += ' BOA NOITE'
+                    img.src= 'noite.png'
+                }
+
+            }
+      </script>
+</body>
+</html>
