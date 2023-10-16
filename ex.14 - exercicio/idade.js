@@ -37,15 +37,15 @@ function clicar(){
 
                 if(idade >=0 && idade <=10){  
                     //criança
-                img.setAttribute('src','bb-f.png')
+                img.setAttribute('src','imagem/bb-f.png')
                
              }else if(idade > 10 && idade <= 21){ 
                      //Jovem
-                img.setAttribute('src','jovem-f.png')
+                img.setAttribute('src','imagem/jovem-f.png')
  
              }else if(idade > 21 && idade < 50){
                      //adulto 
-                img.setAttribute('src', 'imagem/adulto-f.png')
+                img.setAttribute('src', 'imagem/adulta-f.png')
              }else{  
                  //idoso
                 img.setAttribute('src', 'imagem/idosa-f.png')
