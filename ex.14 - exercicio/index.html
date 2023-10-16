@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>    
-        <h1></h1>
+        <h1> Verificador de Idade</h1>
     </header>
 
     <main>  
         <section> 
-            <div> </div>
+            <div> 
+                <p>Ano de Nascimento:   
+                   <input type="number" name="textano" id="textano" min="0"> 
+                </p>
+                <p>Sexo: 
+                  <input type="radio" name="sex" id="m" checked> 
+                  <label for="msc">Masculino</label> 
+                  <input type="radio" name="sex" id="fem">
+                  <label for="fem">Feminina</label> 
+                </p>
+                <p><input type="button" value="Verificar" onclick="clicar()"> </p>
+            </div>
+            <div class="res" > Preencha os dados a cima para receber o resultado! </div>
         </section>
     </main>
     
-    <footer> </footer>
+    <footer> @anthonyricardox</footer>
+
+    <script src="idade.js">  </script>
 </body>
 </html>
