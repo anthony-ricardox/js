@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+
+body{   
+    background-color: rgb(20, 132, 95);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{ 
+    text-align: center;
+    color: rgba(255, 255, 255, 0.865);
+}
+
+main{   
+    background-color: white;
+    width: 350px;
+    height: 220px;
+    padding: 10px;
+    margin: auto;
+}
+div{    
+    padding: 5px;
+
+}
+div#inicio{
+        margin-left: 7px;    
+
+}
+div#fim{
+    margin-left: 18px;
+}
+
+input{  
+    width: 80px;
+    height: 13px;
+}
+
+input#btn{   
+    height: 20px;
+    margin-top: 5px;
+
+ }
+ 
+ p{
+    text-align: justify;
+    
+ }
+ footer{
+    text-align: center;
+ }
+
+
