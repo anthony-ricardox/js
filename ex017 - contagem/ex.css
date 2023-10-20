@@ -16,17 +16,18 @@ main{
     height: 220px;
     padding: 10px;
     margin: auto;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.289);
 }
 div{    
     padding: 5px;
 
 }
 div#inicio{
-        margin-left: 7px;    
+        margin-left: 8px;    
 
 }
 div#fim{
-    margin-left: 18px;
+    margin-left: 20px;
 }
 
 input{  
@@ -37,8 +38,15 @@ input{
 input#btn{   
     height: 20px;
     margin-top: 5px;
-
+    background-color: rgb(193, 182, 236);
+    border: none;
+    border-radius: 5px;
+    font-style: bold;
  }
+#btn:hover{ 
+    background-color: rgb(20,132,95);
+    color: black;
+}
  
  p{
     text-align: justify;
