@@ -1,18 +1,19 @@
-function gerar(){   
-    var num = document.getElementById('nm')
-    var tabuada = document.getElementById('tab')
-    if(num.value.length == 0){  
+function Gerar(){   
+    var num = document.getElementById('#txtnm')
+    var tabu = document.getElementById('#ftab')
+    if (num.value.length == 0){  
         window.alert('[ERRO] digite um número!')
-    }else{  
+    }else{ 
         var n1 = Number(num.value)
         var c = 1
-        tabuada.innerHTML = ' '
+        tabu.innerHTML = ' '
         while(c <= 10){  
             var item = document.createElement('option')
-            item.text = `${n1} X ${c} = ${n1 * c}` 
-            c++
-            tabuada.appendChild(item)
-           
+            item.text = `${n1} X ${c} = ${n1*c}`
+            tabu.appendChild(item) 
+            c++ 
+            
+        
 
         }
     }
