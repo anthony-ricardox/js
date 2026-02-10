@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>    
-        <h1> Verificador de Idade</h1>
+            <h1>Verificador de Idade</h1>
     </header>
 
-    <main>  
-        <section> 
-            <div> 
-                <p>Ano de Nascimento:   
-                   <input type="number" name="textano" id="textano" min="0"> 
-                </p>
-                <p>Sexo: 
-                  <input type="radio" name="sex" id="m" checked> 
-                  <label for="msc">Masculino</label> 
-                  <input type="radio" name="sex" id="fem">
-                  <label for="fem">Feminina</label> 
-                </p>
-                <p><input type="button" value="Verificar" onclick="clicar()"> </p>
-            </div>
-            <div class="res" > Preencha os dados a cima para receber o resultado! </div>
-        </section>
-    </main>
-    
-    <footer> @anthonyricardox</footer>
+        <section>   
+          <div > 
+            <p id="ano">Ano de Nascimento: <input type="number" name="ano1" id="ano1">
+            </p>
 
-    <script src="idade.js">  </script>
+            <p id="sexo">Sexo: <input type="radio" name="radsex" id="m1" checked>
+            <label for="m1">Masculino</label >
+
+            <input type="radio" name="radsex" id="f1">
+            <label for="f1">Feiminino</label>
+            </p>
+
+          </div>  
+        
+        
+
+        <div id="btn" onclick="verifica()">   
+           <input type="button" value="Verificar" >   
+        </div>
+
+        <div id="res">   
+            <p>Preencha os dados para ver o resultado!</p>
+            
+        </div>
+    </section>
+
+    <footer>    
+        <p> &copy;Curso em Videos</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+
 </body>
 </html>
